@@ -2124,7 +2124,7 @@ input, select, textarea {
 			top: 0;
 		}
 .top{
-    background-image: url(/images/night-self.jpg)
+    background-image: url("../../images/night-self.jpg")
 }
 	#nav ul {
 		list-style: none;
