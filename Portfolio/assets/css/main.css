@@ -2123,7 +2123,9 @@ input, select, textarea {
 			left: 0;
 			top: 0;
 		}
-
+.top{
+    background-image: url(/images/night-self.jpg)
+}
 	#nav ul {
 		list-style: none;
 		padding-left: 0;
@@ -2248,7 +2250,7 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/night-banner4.jpg");
 			}
 
 			#main > section.two {
