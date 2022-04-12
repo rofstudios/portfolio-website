@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: rgb(212, 106, 106);
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
@@ -1834,6 +1834,14 @@ input, select, textarea {
 		}
 
 /* Form */
+/* #formvis{
+	display: flex;
+} */
+
+	#thankyou {
+		display: none;
+		font-size: 4rem;
+	}
 
 	form label {
 		display: block;
@@ -1852,7 +1860,7 @@ input, select, textarea {
 		border: 0;
 		outline: 0;
 		background: #fff;
-		background: rgba(255, 255, 255, 0.75);
+		background: rgba(255, 137, 137, 0.75);
 		width: 100%;
 		border-radius: 0.35em;
 		padding: 0.75em 1em 0.75em 1em;
@@ -2158,7 +2166,8 @@ input, select, textarea {
 					#nav ul li a span:before {
 						position: absolute;
 						left: 0;
-						color: #41484c;
+						/* color: #41484c; */
+						color: #757d82;
 						text-align: center;
 						width: 1.25em;
 						line-height: 1.75em;
