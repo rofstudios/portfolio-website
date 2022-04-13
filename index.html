@@ -11,7 +11,10 @@
 	<title>Fernando Quizhpi</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body class="is-preload">
@@ -24,7 +27,7 @@
 			<div id="logo">
 				<span class="image avatar48"><img src="images/avatar-self.jpeg" alt="Profile Photo" /></span>
 				<h1 id="title">Fernando Quizhpi</h1>
-				<p>Lambda School Student</p>
+				<p>Full Stack Developer</p>
 			</div>
 
 			<!-- Nav -->
@@ -65,13 +68,13 @@
 			<div class="container">
 
 				<header>
-					<h2 class="alt"><strong>Hi!</strong><br />I am a Lamnda student learning <br /><strong>Web
-							Development</strong></h2>
+					<h2 class="alt"><strong>Hi!</strong><br />I'm Fernando Quizhpi, a<br /><strong>Full Stack
+							Developer</strong></h2>
 					<!--
 								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
 								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
 -->
-					<p>In here you can explore all of my old, current, and future projects!<br />^_^"</p>
+					<p>Explore all of my old, current, and future projects!<br />^_^"</p>
 				</header>
 
 				<footer>
@@ -89,22 +92,26 @@
 				<header>
 					<h2>Portfolio</h2>
 				</header>
-
+				<!-- 
 				<p>I have taken on a long challenge here with Lamnda for the months to come.<br />In this portfolio you
-					will find the culmination of my studies throughout this journey.</p>
+					will find the culmination of my studies throughout this journey.</p> -->
+				<p>Find the culmination of my studies throughout my journey</p>
 
 				<div class="row">
 					<div class="col-4 col-12-mobile">
 						<article class="item">
-							<a href="https://codepen.io/rofstudios/pen/WNbNyKL" class="image fit"><img
-									src="images/bakery2-self.png" alt="Sweet Eat Bakery Page" /></a>
+							<img data-toggle="modal" data-target="#myModal"
+								data-link="https://dessiyedesignsmain.gatsbyjs.io"
+								src="images/dessiyedesignsthumbnail.jpg" alt="Great Idea Practice Page"
+								class="image fit" data-image-path="images/dessiyedesigns.jpg" />
 							<header>
-								<h3>Sweet Eats Bakery</h3>
+								<h3>Dessiye Designs Blog Site</h3>
 							</header>
 						</article>
 						<article class="item">
-							<a href="https://github.com/rofstudios/responsive-web-design-I" class="image fit"><img
-									src="images/desktop-self.png" alt="Great Idea Practice Page" /></a>
+							<img data-toggle="modal" data-target="#myModal" src="images/innovationthumbnail.jpg"
+								alt="Great Idea Practice Page" class="image fit"
+								data-image-path="images/innovation.jpg" />
 							<header>
 								<h3>Great Idea! Practice</h3>
 							</header>
@@ -112,15 +119,19 @@
 					</div>
 					<div class="col-4 col-12-mobile">
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/odell-self.png"
-									alt="Artist page for Tom Odell" /></a>
+							<!-- <a href="#" class="image fit"><img src="images/odell-self.png"
+									alt="Artist page for Tom Odell" /></a> -->
+							<img data-toggle="modal" data-target="#myModal" src="images//tomodellthumbnail.jpg"
+								alt="Artist page for Tom Odell" class="image fit"
+								data-image-path="images/odell-self.jpg" />
 							<header>
 								<h3>Artist Page</h3>
 							</header>
 						</article>
 						<article class="item">
-							<a href="https://codepen.io/rofstudios/pen/XWJWBBa" class="image fit"><img
-									src="images/bakery-animation-self.png" alt="Sweet Eats Bakery Animation Test" /></a>
+							<img data-toggle="modal" data-target="#myModal" src="images/bakery-animation-self.png"
+								alt="Sweet Eats Bakery Animation Test" class="image fit"
+								data-image-path="images/bakery-animation-self.png" />
 							<header>
 								<h3>Bakery Animation Test</h3>
 							</header>
@@ -128,19 +139,46 @@
 					</div>
 					<div class="col-4 col-12-mobile">
 						<article class="item">
-							<a href="#" class="image fit"><img src="images/macarons-self.png"
-									alt="Macarons Main Page" /></a>
+							<!-- <a href="#" class="image fit"><img src="images/macarons-self.png"
+									alt="Macarons Main Page" /></a> -->
+							<img data-toggle="modal" data-target="#myModal" data-link="https://hawksgamecamp.com/"
+								src="images/hawkscampthumbnail.jpg" alt="Hawks Camp Website" class="image fit"
+								data-image-path="images/hawkscamp.jpg" />
 							<header>
-								<h3>Dolor Penatibus</h3>
+								<h3>Hawks Camp Website</h3>
 							</header>
 						</article>
 						<article class="item">
-							<a href="https://github.com/rofstudios/responsive-web-design-I" class="image fit"><img
-									src="images/mobile-self.png" alt="Great Idea! Mobile Test" /></a>
+							<!-- <a href="#" class="image fit"><img src="images/macarons-self.png"
+									alt="Macarons Main Page" /></a> -->
+							<img data-toggle="modal" data-target="#myModal"
+								data-link="https://codepen.io/rofstudios/full/XWJWBBa" src="images/macarons-self.png"
+								alt="Macarons Main Page" class="image fit" data-image-path="images/macarons-self.png" />
 							<header>
-								<h3>Great Idea! Practice</h3>
+								<h3>Macarons Landing Template</h3>
 							</header>
 						</article>
+					</div>
+				</div>
+
+
+
+				<div id="myModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								<img class="img-responsive" src="" />
+								<h3 id="adesign" style="padding-top: 15px; display: none;">A Design</h3>
+								<header style="margin: 20px; padding-top: 25px; border-top: 1px solid #e5e5e5;"
+									id="header-modal"></header>
+								<a class="link-out-to btn btn-default" style="border: none;font-size: 1.5rem;" href=""
+									alt="" target="_blank">View site</a>
+							</div>
+							<div class="modal-footer">
+								<!-- class="btn btn-default" in button for bootstrap css -->
+								<button type="button" data-dismiss="modal">Close</button>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -158,9 +196,10 @@
 				<a href="#" class="image featured"><img src="images/leaf-self.jpg"
 						alt="About Me Background Image" /></a>
 
-				<p>Learning student in the arts of coding at Lambda School. Varied background and finding a new path to
-					follow in web development, learning and creating projects. Finding and expanding creativy to bring
-					new content to fruition.</p>
+				<p>Located Central Jersey, I spend my time expanding knowledge as a developer. <br /> Versed with HTML
+					and CSS, I have expanded to knew horizons in JS, React, GatsbyJS, Contentful, Express, SQL. <br />
+					The learning and expanding creativity and knowledge to bring
+					new content to fruition doesn't stop.</p>
 
 			</div>
 		</section>
@@ -173,7 +212,7 @@
 					<h2>Contact</h2>
 				</header>
 
-				<p id="contactmsg">Feel free to reach out and share your experience and find use in mine.</p>
+				<p id="contactmsg">Feel free to get in touch with me and share experiences</p>
 
 				<form name="theform" action="https://formsubmit.co/da3cc40a3ae1608c6e0dbeb29d76d1f5" method="POST"
 					target="_blank">
@@ -208,7 +247,7 @@
 
 		<!-- Copyright -->
 		<ul class="copyright">
-			<li>&copy; Untitled. All rights reserved.</li>
+			<li>&copy; Portfolio - Fernando Quizhpi. All rights reserved.</li>
 			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 		</ul>
 		<ul class="copyright">
@@ -227,7 +266,44 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#myModal').on('show.bs.modal', function (e) {
+				var imagesrc = $(e.relatedTarget).attr('data-image-path');
+				const imgAlt = $(e.relatedTarget).attr('alt')
+				const imgLink = $(e.relatedTarget).attr('data-link')
+				const link = $(".link-out-to")
+				const aDesign = $("#adesign")
+				//using e.relatedtarget for link variable, hides the entire element on click
+				$(".img-responsive").attr("src", imagesrc);
+				$("#header-modal").text(imgAlt)
+				if (!imgLink) {
+					link.css("display", "none")
+					aDesign.css("display", "block")
+				} else {
+					link.attr("href", imgLink)
+					link.css("display", "block")
+					aDesign.css("display", "none")
+				}
+			});
+
+			// $('img').on('click', function () {
+			// 	var imagesrc = $(this).attr('src');
+			// 	const imgAlt = $(this).attr('alt')
+			// 	const imgLink = $(this).attr('data-link')
+			// 	const link = $(".link-out-to")
+			// 	$('#myModal').on('show.bs.modal', function () {
+			// 		$(".img-responsive").attr("src", imagesrc);
+			// 		link.attr("href", imgLink)
+			// 		link.attr("alt", imgAlt)
+			// 		if (!imgLink) {
+			// 			link.css("display", "none")
+			// 		}
+
+			// 	});
+			// });
+		});
+	</script>
 	<script>
 		$(document).ready(function () {
 			function checkform() {
@@ -254,7 +330,7 @@
 			});
 		});
 	</script>
-	<script src="assets/js/jquery.min.js"></script>
+	<!-- <script src="assets/js/jquery.min.js"></script> -->
 	<script src="assets/js/jquery.scrolly.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
