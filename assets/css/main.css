@@ -2459,6 +2459,7 @@ input, select, textarea {
 
 				#header .top {
 					position: relative;
+					background-size: contain;
 				}
 
 				#header .bottom {
