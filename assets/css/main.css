@@ -2073,6 +2073,7 @@ input, select, textarea {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
+			background-size: cover;
 		}
 
 		#header .bottom {
@@ -2459,7 +2460,6 @@ input, select, textarea {
 
 				#header .top {
 					position: relative;
-					background-size: contain;
 				}
 
 				#header .bottom {
