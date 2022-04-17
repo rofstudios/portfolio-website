@@ -211,24 +211,52 @@
 				<header>
 					<h2>Contact</h2>
 				</header>
-
 				<p id="contactmsg">Feel free to get in touch with me and share experiences</p>
+
+
+
+				<script type="text/javascript" language="javascript">
+					function checkform() {
+						var f = document.forms["theform"].elements;
+						var cansubmit = true;
+						const thebtn = $(".btnform")
+						// console.log(cansubmit, "cansubmit")
+
+						for (var i = 0; i < f.length; i++) {
+							if (i == 0) { continue; }
+							if (f[i].value.length == 0)
+								cansubmit = false;
+							console.log(cansubmit, "hi2")
+
+						}
+
+						console.log(cansubmit, "hi")
+						// document.getElementsByClassName('btnform').disabled = true;
+						thebtn.prop("disabled", !cansubmit)
+
+					}
+					window.onload = checkform;
+				</script>
+
+
+
 
 				<form name="theform" action="https://formsubmit.co/da3cc40a3ae1608c6e0dbeb29d76d1f5" method="POST"
 					target="_blank">
 					<div id="formvis" class="row">
 						<input type="text" name="_honey" style="display:none">
 						<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" required
-								onchange="checkform()" />
+								onkeyup="checkform()" />
 						</div>
 						<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" required
-								onchange="checkform()" />
+								onkeyup="checkform()" />
 						</div>
 						<div class="col-12">
-							<textarea name="message" placeholder="Message" required onchange="checkform()"></textarea>
+							<textarea name="message" placeholder="Message" type="text" required
+								onkeyup="checkform()"></textarea>
 						</div>
 						<div class="col-12">
-							<input class="btnform" type="submit" value="Send Message" />
+							<input class="btnform" disabled="disabled" type="submit" value="Send Message" />
 						</div>
 					</div>
 					<div id="thankyou">
@@ -286,46 +314,17 @@
 					aDesign.css("display", "none")
 				}
 			});
-
-			// $('img').on('click', function () {
-			// 	var imagesrc = $(this).attr('src');
-			// 	const imgAlt = $(this).attr('alt')
-			// 	const imgLink = $(this).attr('data-link')
-			// 	const link = $(".link-out-to")
-			// 	$('#myModal').on('show.bs.modal', function () {
-			// 		$(".img-responsive").attr("src", imagesrc);
-			// 		link.attr("href", imgLink)
-			// 		link.attr("alt", imgAlt)
-			// 		if (!imgLink) {
-			// 			link.css("display", "none")
-			// 		}
-
-			// 	});
-			// });
 		});
 	</script>
 	<script>
-		$(document).ready(function () {
-			function checkform() {
-				var f = document.forms["theform"].elements;
-				var cansubmit = true;
 
-				for (var i = 0; i < f.length; i++) {
-					if (f[i].value.length == 0)
-						cansubmit = false;
-				}
-
-				document.getElementsByClassName('btnform').disabled = !cansubmit;
-			}
-			window.onload = checkform;
-		});
 
 		$(document).ready(function () {
 			$(".btnform").click(function () {
-				$("#formvis").fadeToggle(3000, function () {
-					$("#thankyou").fadeToggle(6000);
+				$("#formvis").fadeToggle(2000, function () {
+					$("#thankyou").fadeToggle(5000);
 				});
-				$("#contactmsg").fadeToggle(3000);
+				$("#contactmsg").fadeToggle(2000);
 
 			});
 		});
